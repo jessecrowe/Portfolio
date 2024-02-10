@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+  <nav id="desktop">
+    <h1 class="name">JESSE CROWE</h1>
+    <ul class="nav-link">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="burger">
+    <h1 class="name">JESSE CROWE</h1>
+    <div class="burger-menu">
+      <div class="burger-image" onclick="toggleBurger()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div>
+        <ul class="burger-links">
+          <li><a href="#about" onclick="toggleBurger()">About</a></li>
+          <li><a href="#skills" onclick="toggleBurger()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleBurger()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleBurger()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about " id="profile">
+    <div class="profile-container">
+      <img src="/images/profile pic.jpg" alt="profilepic" class="profileimg" />
+    </div>
+    <div class="section_text">
+      <h1 class="title">JESSE CROWE</h1>
+      <p class="section_text_2">Full-Stack Web Developer</p>
+
+      <div class="btn-container">
+        <button type="button" class=" resumeBtn" onclick="window.open('/images/Jesse-Crowe-Resume.pdf')">View my Resume</button>
+      </div>
+
+      <div id="socials">
+        <img src="./images/linkedin logo.webp" alt="linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/jesse-crowe-a500a22b3'">
+        <img src="./images/github.jpg" alt="github profile" class="icon"
+          onclick="location.href='https://www.github.com/jessecrowe'">
+      </div>
+    </div>
+    <div class="bio">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        I love hanging out with my wife and kids. They bring the greatest joy into my life.</p>
+      <p>
+        I started getting into coding from
+        a love of video games and being able to solve puzzles in them.
+      </p>
+      <p>
+        I also enjoy watching the Utah Jazz.</p>
+
+      I am a die hard fan even though
+      I am usually dissapointed by the outcome every year,
+      I still cheer on the team and watch every game.
+      </p>
+    </div>
+  </section>
+
+  <section class="more-aboutme">
+    <h2 class="title">Career Goals</h2>
+    <p class="section_text_2">
+      I have been going to school for Full-Stack Web Development through Kenzie Academy. 
+      <br>
+      I am graduating in April.
+    </p>
+    <p>
+      I would love to get into making and desiging websites.
+      <br>
+      <strong>One day I will become a Senior Full-Stack Web Developer.</strong>
+    </p>
+    <br>
+    <p class="quote">
+      "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.” -Francis of
+      Assisi
+    </p>
+  </section>
+
+  <section class="tech-skills" id="skills">
+    <h2 class="title">My Skills in Tech</h2>
+    <div class="skills-container">
+      <div class="details-container">
+        <h2 class="skills-sub-title">FrontEnd Skills</h2>
+        <div class="article-container">
+          <article>
+            <img src="./images/arrow-pointing-to-right.png"
+            alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>HTML</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./images/arrow-pointing-to-right.png" alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>Javascript</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./images/arrow-pointing-to-right.png" alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>CSS</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./images/arrow-pointing-to-right.png" alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>React</h3>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      <div class="details-container">
+        <h2 class="skills-sub-title">BackEnd Skills</h2>
+        <div class="article-container">
+          <article>
+            <img src="./images/arrow-pointing-to-right.png" alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>Express JS</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./images/arrow-pointing-to-right.png" alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>MongoDB</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./images/arrow-pointing-to-right.png" alt="arrow-pointing-right" class="icon" />
+            <div>
+              <h3>Node</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="projects">
+    <h2 class="title">My Projects</h2>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="title">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <img src="./images/email logo.webp"
+         alt="email logo"
+          class="icon"/>
+        <p><a href="mailto:jesse7110@yahoo.com">Click here to Email </a></p>
+      </div>
+      <div class="contact-info">
+        <img src="./images/linkedin logo.webp" 
+        alt="linkedin logo"
+        class="icon"/>
+        <p><a href="https://www.linkedin.com/in/jesse-crowe-a500a22b3">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #659dbd;
+    background-size: cover;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    height: 9vh;
+    
+}
+
+.nav-link {
+    list-style: none;
+}
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
+  nav a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .name:hover {
+    cursor:default;
+  }
+
+  #burger {
+    display: none;
+  }
+  .burger-menu {
+   position: relative;
+   display: inline-block;
+  }
+
+  .burger-image {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    width: 30px;
+    cursor: pointer;
+  }
+.burger-image span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+  .burger-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #659dbd;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+
+  }
+
+  .burger-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+
+  .burger-links li {
+    list-style: none;
+  }
+  
+  .burger-links.open {
+    max-height: 300px;
+  }
+
+  .burger-image.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px)
+  }
+.burger-image.open span:nth-child(2) {
+    opacity: 0
+}
+.burger-image.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px)
+}
+
+.burger-image span:first-child {
+    transform: none;
+}
+.burger-image span:first-child {
+    opacity: 1;
+}
+.burger-image span:first-child {
+    transform: none;
+}
+
+/* Sections */
+
+section {
+  /* padding-top: 10vh; */
+  height: 80vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.profile-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section_text {
+  align-self: center;
+  text-align: center;
+}
+
+.section_text p {
+  font-weight: 600;
+}
+
+.section_text_p1{
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title{
+  font-size: 2rem;
+  text-align: center;
+  cursor: default;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* Button */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.resumeBtn {
+  border: black 0.1rem solid;
+  background: gray;
+  color: black; font-weight: 600;
+  width: 6rem;
+  border-radius: 2rem;
+  
+
+}
+
+.resumeBtn:hover {
+cursor: pointer;
+background: black;
+color: white;
+}
+
+/* About */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 68rem;
+    margin: auto;
+  }
+
+  .more-aboutme {
+    padding: 150px;
+  }
+  
+  .profileimg {
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .bio {
+    width: 25rem;
+    padding: .5rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px;
+  }
+
+  .bio p {
+    padding: 0.3rem 0;
+  }
+
+  .more-aboutme {
+    text-align: center;
+  }
+
+  .quote {
+    font-weight: bold;
+  }
+
+  /* Skills */
+
+  .details-container {
+    padding: 0.5rem;
+    margin: 2rem;
+   display: flex;
+    border-radius: 2rem;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 0px 1px 10px 1px;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Contact */
+
+  .contact-info .icon {
+    cursor: default;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 2px solid black;
+    border-color: black;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+ 
