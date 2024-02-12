@@ -1,3 +1,6 @@
+
+
+
 @media screen and (max-width: 1200px) {
     #desktop {
         display: none;
@@ -6,6 +9,4 @@
         display: flex;
     }
 }
-@media screen and (max-width: 600px) {
-  
-}
+
