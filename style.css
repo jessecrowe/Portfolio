@@ -138,8 +138,7 @@ section {
   box-sizing: border-box;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  padding: 10vh 10rem;
-  box-sizing: border-box;}
+}
 
 .section-container {
   display: flex;
@@ -150,7 +149,6 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  padding: 0;
 }
 
 .profile-container {
@@ -238,7 +236,7 @@ color: white;
   }
 
   .more-aboutme {
-    padding: 0px;
+    padding: 150px;
   }
   
   .profileImg {
@@ -260,7 +258,6 @@ color: white;
 
   .more-aboutme {
     text-align: center;
-    padding: 0;
   }
 
   .quote {
@@ -297,7 +294,6 @@ color: white;
     justify-content: center;
     flex-direction: column;
     height: 20vh;
-    padding: 0;
   }
 
   .contact-container {
@@ -316,10 +312,6 @@ color: white;
     justify-content: center;
     gap: 2rem;
     margin: 1rem;
-  }
-
-  .tech-skills {
-    padding: 0;
   }
 
   .skills-title{
