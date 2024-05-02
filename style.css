@@ -188,7 +188,6 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
 }
 
 /* Button */
@@ -277,6 +276,10 @@ color: white;
     cursor: default;
   }
 
+  .contact {
+    padding-top: 250px;
+  }
+
   #contact {
     display: flex;
     justify-content: center;
@@ -318,10 +321,6 @@ color: white;
     margin-bottom: 20px;
   }
   
-  .icon {
-    width: 20px;
-    margin-right: 10px;
-  }
   
   h3 {
     margin: 0;
@@ -343,4 +342,45 @@ color: white;
 
 .prj-description {
   margin-left: 100px;
+}
+
+.prj-p {
+  margin-top: 20px;
+}
+
+/* Responsive design */
+
+/* larger screens */
+@media screen and (min-width: 768px) {
+  .about,
+  .more-aboutme,
+  .tech-skills,
+  .portfolio,
+  .contact {
+    width: 80%; 
+    margin: 0 auto; 
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .github-icon {
+    height: 50px;
+    width: 50px;
+  }
+  
+}
+
+/*  smaller screens */
+@media screen and (max-width: 767px) {
+  .about,
+  .more-aboutme,
+  .tech-skills,
+  .portfolio,
+  .contact {
+    width: 100%; 
+    margin: 0 auto; 
+  }
 }
