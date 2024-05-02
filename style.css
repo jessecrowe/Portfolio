@@ -358,28 +358,3 @@ color: white;
 /* Responsive design */
 
 /* larger screens */
-@media screen and (min-width: 768px) {
-  .about,
-  .more-aboutme,
-  .tech-skills,
-  .portfolio,
-  .contact {
-    width: 80%; 
-    margin: 0 auto; 
-  }
-
-
-  
-}
-
-/*  smaller screens */
-@media screen and (max-width: 767px) {
-  .about,
-  .more-aboutme,
-  .tech-skills,
-  .portfolio,
-  .contact {
-    width: 100%; 
-    margin: 0 auto; 
-  }
-}
