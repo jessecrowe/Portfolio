@@ -234,6 +234,7 @@ color: white;
   .profileImg {
     height: 35rem;
     width: 35rem;
+    border-radius: 50%;
   }
 
   .bio {
@@ -260,7 +261,6 @@ color: white;
   .details-container {
     padding: 0.5rem;
     margin: 2rem;
-   display: flex;
     border-radius: 2rem;
     border: 2px solid black;
     text-align: center;
@@ -270,9 +270,8 @@ color: white;
   .skills-container {
     display: flex;
     justify-content: space-evenly;
+    
   }
-
-  /* Contact */
 
   .contact-info .icon {
     cursor: default;
@@ -303,4 +302,45 @@ color: white;
     margin: 1rem;
   }
 
- 
+  .skills-title{
+    text-align: center;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .article-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+
+/* projects */
+
+.projectsImg {
+  height: 500px;
+  width: 600px;
+  border-radius: 5px;
+}
+
+.project-container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.prj-description {
+  margin-left: 100px;
+}
