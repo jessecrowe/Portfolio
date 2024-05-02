@@ -188,6 +188,13 @@ section {
 
 .icon {
   cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.github-icon {
+  height: 50px;
+  width: 50px;
 }
 
 /* Button */
@@ -361,15 +368,7 @@ color: white;
     margin: 0 auto; 
   }
 
-  .icon {
-    height: 40px;
-    width: 40px;
-  }
 
-  .github-icon {
-    height: 50px;
-    width: 50px;
-  }
   
 }
 
