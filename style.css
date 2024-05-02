@@ -156,6 +156,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  flex-shrink: 0;
 }
 
 .section_text {
@@ -244,6 +245,7 @@ color: white;
   }
 
   .bio {
+    flex-grow: 1;
     width: 25rem;
     max-width: 40rem;
     padding: .5rem;
