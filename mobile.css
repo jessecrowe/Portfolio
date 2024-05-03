@@ -9,4 +9,122 @@
         display: flex;
     }
 }
-
+@media screen and (max-width: 767px) {
+    section {
+      padding: 3rem 1rem; 
+    }
+  
+    
+    .section_text_2, 
+    .quote {
+      text-align: center;
+    }
+  
+    section:not(:first-child) {
+      margin-top: 3rem;
+    }
+  
+    #socials {
+      margin-top: 1rem;
+    }
+  
+    .bio {
+      width: calc(100% - 2rem);
+    }
+  
+    .tech-skills {
+      text-align: center; 
+      margin: 2rem 0 2rem 1rem;
+    }
+  
+    .project-container {
+      margin: 2rem auto;
+      max-width: 90%;
+    }
+  
+    .portfolio {
+      padding: 2rem; 
+      text-align: center;
+      margin-top: 3rem; 
+    }
+  
+    .contact {
+      padding: 2rem; 
+      text-align: center;
+      margin-top: 3rem; 
+    }
+    
+  
+    .contact-info {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .contact-info .icon {
+      margin-bottom: 0.5rem;
+    }
+  
+  
+   
+    #desktop {
+      display: none;
+    }
+  
+    #burger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3.5rem;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      height: 9vh;
+    }
+  
+    .burger-menu {
+      display: flex;
+      align-items: center;
+    }
+  
+    .burger-links {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #659dbd;
+      width: -moz-fit-content;
+      width: fit-content;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .burger-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 22px;
+      width: 30px;
+      cursor: pointer;
+    }
+  
+    .burger-image span {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .burger-links.open {
+      max-height: 300px;
+    }
+  
+    .burger-image.open span:first-child {
+      transform: rotate(45deg) translate(10px, 5px);
+    }
+  
+    .burger-image.open span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .burger-image.open span:last-child {
+      transform: rotate(-45deg) translate(10px, -5px);
+    }
+}  
